@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "hcl-cus-rsg-d-network" {
     location = "uswest"
 
     tags = {
-        environment = "Azure"
+        environment = "Terraform"
     }
 }
 resource "azurerm_virtual_network" "hcl-cus-vnet-d-01" {
@@ -13,7 +13,7 @@ resource "azurerm_virtual_network" "hcl-cus-vnet-d-01" {
     resource_group_name = azurerm_resource_group.myterraformgroup.name
 
     tags = {
-        environment = "Azure"
+        environment = "Terraform"
     }
 }
 resource "azurerm_subnet" "hcl-cus-snt-d-aks" {
